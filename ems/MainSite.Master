@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainSite.master.cs" Inherits="ems.MainSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+ 
+   <nav class="navbar navbar-expand-lg  navbar-dark bg-dark navbar fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="Home.aspx">
+        <img alt="" src="images/logo.jpg"  height="40px"/></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Home.aspx">Home</a>
+        </li>
+        
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Programe
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="programe.aspx">Add programe</a></li>
+            <li><a class="dropdown-item" href="manage_programe.aspx">manage programe</a></li>
+           
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Subject
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="subject.aspx">Add Subject</a></li>
+            <li><a class="dropdown-item" href="manage_subject.aspx">Manage subject</a></li>
+           
+          </ul>
+        </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Student
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="student.aspx">Add Student</a></li>
+            <li><a class="dropdown-item" href="Student_detail.aspx">Manage Student</a></li>
+           
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Exam
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="exam.aspx">Add Exam Name</a></li>
+            <li><a class="dropdown-item" href="exam_datetime_arrangement.aspx">Add Exam-detail</a></li>
+            <li><a class="dropdown-item" href="manage_exam.aspx">Manage Exam </a></li>
+            <li><a class="dropdown-item" href="manage_examschedule.aspx">Manage Exam Schedule</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="seating_arrangement.aspx">Exam Seating Arrangment</a>
+        </li>
+      </ul>
+     <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.aspx" title="Log-out" ><i class="material-icons alert-danger" style="font-size: 25px; ">&#xe879;</i></a></li>
+        </ul>
+    </div>
+  </div>
+</nav>
+    
+          <div class="container-fluid " style="margin-top: 80px;">
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+</body>
+</html>
