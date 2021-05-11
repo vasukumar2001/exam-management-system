@@ -151,6 +151,7 @@
     <Compile Include="manage_subject.aspx.designer.cs">
       <DependentUpon>manage_subject.aspx</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="student.aspx.cs">
       <DependentUpon>student.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -240,6 +241,9 @@
   <ItemGroup>
     <Content Include="MainSite.Master" />
     <None Include="packages.config" />
+    <Content Include="sqldata and report\ems report.docx" />
+    <Content Include="sqldata and report\ems report.pdf" />
+    <Content Include="sqldata and report\ems-data.bacpac" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
